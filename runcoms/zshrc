@@ -11,3 +11,27 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# global alias
+
+alias c='clear'
+alias ll='ls -laF'
+alias l='ls -CF'
+
+alias less='less -N'
+alias update='sudo apt update && sudo apt upgrade'
+
+# custom alias
+
+# remap logitech mouse
+alias mouse='~/Projects/Perso/dotfiles/remap-mouse-buttons.sh'
+
+# Clear activities and shutdown
+alias byebye='pytivity activate laptop -s && shutdown -h now'
+
+# bluetooth switch to a2dp
+alias headset='python3 ~/Projects/Perso/dotfiles/a2dp.py 0C:E0:E4:BA:DD:5B'
+alias bose-speaker='python3 ~/Projects/Perso/dotfiles/a2dp.py 00:0C:8A:83:51:E0'
+
+# Open git aliases
+alias galias='vim ~/Documents/prezto-git-alias.sh'
